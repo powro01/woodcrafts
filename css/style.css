@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 10px; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  color: #333333;
+  font-family: 'Lato', sans-serif; }
+
+img.responsive {
+  max-width: 100%;
+  height: auto; }
+
+hr.break {
+  border: none;
+  border-bottom: 1px solid #7f8c8d; }
+
+.logo {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 5%; }
+  .logo__box {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; }
+  .logo__brand {
+    font-family: 'Alex Brush', cursive;
+    font-size: 2.25rem;
+    margin-bottom: 5px; }
+  .logo__caption {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 8px; }
+  @media only screen and (min-width: 1100px) {
+    .logo {
+      padding: 2%; } }
+
+.navigation {
+  width: 100%;
+  height: auto; }
+  .navigation__trigger {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    cursor: pointer;
+    background: transparent;
+    border: none; }
+    .navigation__trigger img {
+      width: 40px;
+      height: 40px; }
+    .navigation__trigger:focus {
+      outline: 0; }
+    .navigation__trigger:focus ~ .navigation__list {
+      height: auto;
+      visibility: visible; }
+    @media only screen and (min-width: 768px) {
+      .navigation__trigger {
+        display: none; } }
+  .navigation__list {
+    width: 100%;
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden; }
+    .navigation__list li {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      visibility: inherit; }
+      .navigation__list li a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-transform: uppercase;
+        border-top: 1px solid #7f8c8d; }
+        .navigation__list li a:hover {
+          background: #7f8c8d;
+          color: #ffffff; }
+  @media only screen and (min-width: 768px) {
+    .navigation__list {
+      height: auto;
+      visibility: visible;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #7f8c8d; }
+      .navigation__list li {
+        width: auto; }
+        .navigation__list li a {
+          border: none; } }
+  @media only screen and (min-width: 1100px) {
+    .navigation {
+      padding: 0 5%; } }
+
+.slider {
+  width: 100%;
+  height: 40vh;
+  padding: 5%; }
+  .slider__box {
+    width: 100%;
+    height: 100%;
+    background: url("../img/slider.jpg");
+    background-size: cover; }
+  @media only screen and (min-width: 768px) {
+    .slider {
+      height: 300px; } }
+  @media only screen and (min-width: 1100px) {
+    .slider {
+      height: 400px;
+      padding: 2%; } }
+
+.row {
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  border-bottom: 1px solid #7f8c8d; }
+  .row::after {
+    clear: both; }
+  @media only screen and (min-width: 1160px) {
+    .row {
+      padding: 3% 10%; } }
+
+.offer-list {
+  width: 100%;
+  display: inline-block; }
+  .offer-list li {
+    width: 100%;
+    border: 1px solid #7f8c8d;
+    position: relative;
+    margin-bottom: 15px;
+    cursor: pointer; }
+    .offer-list li .title {
+      width: auto;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px;
+      background: #ffffff;
+      font-size: 1.5rem;
+      color: #333333; }
+    .offer-list li .caption {
+      opacity: 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: auto;
+      padding: 5%;
+      background: #ffffff;
+      transition: 0.7s; }
+    .offer-list li:hover .caption {
+      opacity: 1; }
+  @media only screen and (min-width: 768px) {
+    .offer-list li {
+      width: 44%;
+      margin: 3%;
+      float: left; } }
+  @media only screen and (min-width: 1160px) {
+    .offer-list li {
+      width: 23%;
+      margin: 1%;
+      float: left; } }
