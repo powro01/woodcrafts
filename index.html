@@ -39,7 +39,7 @@
             <div class="slider__box"></div>
         </section>
         <hr class="break">
-        <main>
+        <main ng-app="woodCrafts">
             <section class="row">
                 <article class="text text__bigger">
                     <div class="row__row-12">
@@ -67,7 +67,7 @@
                 </div>
                 <div class="row__row-m-6">
                     <h1 class="header header__handwrite">Kreator zamówienia</h1>
-                    <form method="post" class="site-form">
+                    <form method="post" class="site-form" ng-controller="calcPrice">
                         <div class="site-form__group">
                             <label for="string">Wyraz: *</label>
                             <input type="text" name="string" id="string" required>
@@ -75,15 +75,15 @@
                         <div class="site-form__group">
                             <label for="size">Rozmiar: *</label>
                             <select name="size" id="size">
-                                <option>STANDARD</option>
-                                <option>Inicjały</option>
+                                <option value="standard">STANDARD</option>
+                                <option value="inicialy">Inicjały</option>
                             </select>
                         </div>
                         <div class="site-form__group">
                             <h2>Cena: </h2> <span id="price"></span>
                         </div>
                         <div class="site-form__group">
-                            <button type="submit" name="submit" class="btn btn--primary">Dodaj do koszyka</button>
+                            <button type="submit" name="submit" id="addItem" class="btn btn--primary">Dodaj do koszyka</button>
                         </div>
                     </form>
                 </div>
@@ -140,5 +140,8 @@
             <p>projekt i wykonanie: kamilpowroznik.pl</p>
         </section>
         <script src="js/script.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>-->
+        <!--<script src="js/shopapp.js"></script>-->
+        <script src="js/shop.js"></script>
     </body>
 </html>

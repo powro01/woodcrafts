@@ -283,14 +283,11 @@ hr.break {
         padding: 5%;
     }
 
-    [class^="row__row-m-"] {
-        width: 100%;
-        padding: 5%;
-    }
-    
-    [class^="row__row-l-"] {
-        width: 100%;
-        padding: 5%;
+    @media only screen and (min-width: 768px) {
+        &__row-m-6 {
+            width: 50%;
+            float: left;
+        }
     }
 
     &::after {
