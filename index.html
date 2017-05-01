@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Great+Vibes&amp;subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     <body>
         <header class="logo">
@@ -61,11 +62,11 @@
                 </ul>
             </section>
             <section class="row">
-                <div class="row__row-m-6">
+                <div class="row__row-12">
                     <h1 class="header header__handwrite">Cennik</h1>
                     <p><strong>STANDARD</strong> 5zł/litera</p>
                 </div>
-                <div class="row__row-m-6">
+                <!--<div class="row__row-m-6">
                     <h1 class="header header__handwrite">Kreator zamówienia</h1>
                     <form method="post" class="site-form" ng-controller="calcPrice">
                         <div class="site-form__group">
@@ -86,7 +87,7 @@
                             <button type="submit" name="submit" id="addItem" class="btn btn--primary">Dodaj do koszyka</button>
                         </div>
                     </form>
-                </div>
+                </div>-->
             </section>
             <section class="row">
                 <div class="row__row-12">
@@ -101,16 +102,17 @@
                 </div>
             </section>
             <section class="row">
-                <div class="row__row-m-6">
+                <div class="row__row-12">
                     <h1 class="header header__handwrite">Kontakt</h1>
                     <address>
                         Kwiaciarnia "Zielony Zakątek"<br>
                         ul. Spółdzielcza 1<br>
                         32-800 Brzesko<br>
-                        NIP:
+                        NIP:<br>
+                        mail: woodcraftspl@gmail.com
                     </address>
                 </div>
-                <div class="row__row-m-6">
+                <div class="row__row-12">
                     <form method="post" class="site-form">
                         <div class="site-form__group">
                             <label for="email">E-mail: *</label>
@@ -126,6 +128,9 @@
                             <p>Wymagane jest wypełnienie wszystkich pól oznaczonych *.</p>
                         </div>
                         <div class="site-form__group">
+                            <div class="g-recaptcha" data-sitekey="6LdtbB8UAAAAABbbpqdYW5v14_AXb_Xd89EclJkM"></div>
+                        </div>
+                        <div class="site-form__group">
                             <button type="submit" name="submit" class="btn btn--primary">Wyślij wiadomość</button>
                         </div>
                     </form>
@@ -139,9 +144,5 @@
             </ul>
             <p>projekt i wykonanie: kamilpowroznik.pl</p>
         </section>
-        <script src="js/script.js"></script>
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>-->
-        <!--<script src="js/shopapp.js"></script>-->
-        <script src="js/shop.js"></script>
     </body>
 </html>
